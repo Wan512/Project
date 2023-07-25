@@ -73,7 +73,7 @@ public class AppointmentAdapter extends RecyclerView.Adapter<AppointmentAdapter.
         // bind data to the view holder
         appointment m = mListData.get(position);
         holder.tvDate.setText(m.getAppointment_date());
-        holder.tvTime.setText(m.getAppointment_time());
+       // holder.tvTime.setText(m.getAppointment_time());
         holder.tvDesc.setText(m.getAppointment_desc());
     }
 

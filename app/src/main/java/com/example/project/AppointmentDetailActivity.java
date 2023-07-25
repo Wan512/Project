@@ -55,7 +55,7 @@ import retrofit2.Response;
 
                 // set values
                 tvDate.setText(appointment.getAppointment_date()); // Corrected here
-                tvTime.setText(appointment.getAppointment_time()); // Corrected here
+             //   tvTime.setText(appointment.getAppointment_time()); // Corrected here
                 tvDesc.setText(appointment.getAppointment_desc());
 
             }
