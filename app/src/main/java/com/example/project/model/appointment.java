@@ -2,6 +2,30 @@ package com.example.project.model;
 
 public class appointment {
 
+    private String description;
+
+    // Constructor and other methods
+
+    // Setter method for the description
+    public void setDesc(String description) {
+        this.description = description;
+    }
+    private String createdAt;
+
+    // Constructor and other methods
+
+    // Setter method for the creation date
+    public void setCreatedAt(String createdAt) {
+        this.createdAt = createdAt;
+    }
+    private String updatedAt;
+
+    // Constructor and other methods
+
+    // Setter method for the update date
+    public void setUpdatedAt(String updatedAt) {
+        this.updatedAt = updatedAt;
+    }
     private int appointment_id;
 
     //private String appointment_time;
@@ -63,7 +87,7 @@ public class appointment {
   //  }
 
     @Override
-    public String toString() {
+    public  String toString() {
         return "appointment{" +
                 "Appointment_id=" + appointment_id +
                 //", appointment_time='" + appointment_time + '\'' +

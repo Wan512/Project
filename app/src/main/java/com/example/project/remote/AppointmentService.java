@@ -7,7 +7,6 @@ import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
-import retrofit2.http.DELETE;
 import retrofit2.http.GET;
 import retrofit2.http.Header;
 import retrofit2.http.POST;
@@ -35,4 +34,6 @@ public interface AppointmentService {
      */
     @POST("api/appointment/delete/{id}")
     Call<DeleteResponse> deleteAppointment(@Header ("api-key") String apiKey, @Path("id") int id);
+
+    Call<appointment> updateAppointment(@Header ("api-key") String apiKey, @Body Object appointment);
 }
